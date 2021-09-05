@@ -1,4 +1,3 @@
-absl-py @ file:///C:/ci/absl-py_1615411407614/work
 aiohttp @ file:///C:/ci/aiohttp_1614361133907/work
 alabaster==0.7.12
 altair==4.1.0
