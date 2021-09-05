@@ -13,7 +13,7 @@ matplotlib
 joblib
 eli5
 pdpbox
-shap
+shap==0.34.0
 lifelines
 scipy
 statsmodels
