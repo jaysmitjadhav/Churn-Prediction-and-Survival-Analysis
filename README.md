@@ -21,7 +21,7 @@ In this project, I aim to perform customer survival analysis and build a model w
 ├── static/                             : plots to show gauge chart, hazard and survival curve, shap values in Flask App 
 │   └── images/
 │       ├── app_pic.png
-│       ├── shap.png
+│       └── shap.png
 ├── templates/                          : contains html template for flask app
 │   └── index.html
 ├── Customer Churn Prediction.ipynb     : Random Forest model to predict customer churn
@@ -34,6 +34,6 @@ In this project, I aim to perform customer survival analysis and build a model w
 ├── churnmodel.pkl                      : Random Forest model for churn prediction
 ├── explainer.bz2                       : Shap Explainer
 ├── requirements.txt                    : requirements to run this model
-├── survivemodel.pkl                    : Cox-proportional Hazard model
+└── survivemodel.pkl                    : Cox-proportional Hazard model
 
 ```
