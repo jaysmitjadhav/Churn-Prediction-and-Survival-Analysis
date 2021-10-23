@@ -37,3 +37,70 @@ In this project, I aim to perform customer survival analysis and build a model w
 └── survivemodel.pkl                    : Cox-proportional Hazard model
 
 ```
+## Customer Survival Analysis
+
+**Survival Analysis:** 
+Survival analysis is generally defined as a set of methods for analyzing data where the outcome variable is the time until the occurrence of an event of interest. The event can be death, occurrence of a disease, marriage, divorce, etc. The time to event or survival time can be measured in days, weeks, years, etc.
+
+For example, if the event of interest is heart attack, then the survival time can be the time in years until a person develops a heart attack.
+
+**Objective:**
+The objective of this analysis is to utilize non-parametric and semi-parametric methods of survival analysis to answer the following questions.
+- How the likelihood of the customer churn changes over time?
+- How we can model the relationship between customer churn, time, and other customer characteristics?
+- What are the significant factors that drive customer churn?
+- What is the survival and Hazard curve of a specific customer?
+- What is the expected lifetime value of a customer?
+
+**Kaplan-Meier Survival Curve:**
+
+<p align="center">
+<img src="https://github.com/jaysmitjadhav/Churn-Prediction-and-Survival-Analysis/blob/main/static/images/survival_curve.png" width="400" height="300">
+</p>
+
+From above graph, we can say that
+- AS expected, for telcom, churn is relatively low. The company was able to retain more than 60% of its customers even after 72 months.
+- There is a constant decrease in survival probability probability between 3-60 months.
+- After 60 months or 5 years, survival probability decreases with a higher rate. 
+
+**Log-Rank Test:** 
+
+Log-rank test is carried out to analyze churning probabilities group wise and to find if there is statistical significance between groups. The plots show survival curve group wise.
+
+<p align="center">
+<img src="https://github.com/jaysmitjadhav/Churn-Prediction-and-Survival-Analysis/blob/main/static/images/gender.png" width="250" height="200"/> 
+<img src="https://github.com/jaysmitjadhav/Churn-Prediction-and-Survival-Analysis/blob/main/static/images/senior_citizen.png" width="250" height="200"/>
+<img src="https://github.com/jaysmitjadhav/Churn-Prediction-and-Survival-Analysis/blob/main/static/images/partner.png" width="250" height="200"/> 
+</p>
+
+<p align="center">
+<img src="https://github.com/jaysmitjadhav/Churn-Prediction-and-Survival-Analysis/blob/main/static/images/dependents.png" width="250" height="200"/> 
+<img src="https://github.com/jaysmitjadhav/Churn-Prediction-and-Survival-Analysis/blob/main/static/images/phone_service.png" width="250" height="200"/>
+<img src="https://github.com/jaysmitjadhav/Churn-Prediction-and-Survival-Analysis/blob/main/static/images/multiple_lines.png" width="250" height="200"/> 
+</p>
+
+<p align="center">
+<img src="https://github.com/jaysmitjadhav/Churn-Prediction-and-Survival-Analysis/blob/main/static/images/internet_service.png" width="250" height="200"/> 
+<img src="https://github.com/jaysmitjadhav/Churn-Prediction-and-Survival-Analysis/blob/main/static/images/online_security.png" width="250" height="200"/> 
+<img src="https://github.com/jaysmitjadhav/Churn-Prediction-and-Survival-Analysis/blob/main/static/images/online_backup.png" width="250" height="200"/> 
+</p>
+
+<p align="center">
+<img src="https://github.com/jaysmitjadhav/Churn-Prediction-and-Survival-Analysis/blob/main/static/images/device_protection.png" width="250" height="200"/> 
+<img src="https://github.com/jaysmitjadhav/Churn-Prediction-and-Survival-Analysis/blob/main/static/images/tech_support.png" width="250" height="200"/>
+<img src="https://github.com/jaysmitjadhav/Churn-Prediction-and-Survival-Analysis/blob/main/static/images/contract.png" width="250" height="200"/> 
+</p>
+
+<p align="center">
+<img src="https://github.com/jaysmitjadhav/Churn-Prediction-and-Survival-Analysis/blob/main/static/images/streaming_movies.png" width="250" height="200"/>
+<img src="https://github.com/jaysmitjadhav/Churn-Prediction-and-Survival-Analysis/blob/main/static/images/payment_method.png" width="250" height="200"/> 
+<img src="https://github.com/jaysmitjadhav/Churn-Prediction-and-Survival-Analysis/blob/main/static/images/paperless_billing.png" width="250" height="200"/>
+</p>
+
+From above graphs we can conclude following:
+- Customer's Gender and the phone service type are not indictive features and their p value of log rank test is above threshold value 0.05.
+- If customer is young and has a family, he or she is less likely to churn. The reason might be the busy life, more money or other factors.
+- If customer is not enrolled in services like online backup, online security, device protection, tech support, streaming TV and streaming movies even though having active internet service, the survival probability is lower.
+- The company should traget customers who opt for internet service as their survival probability constantly descreases. Also, Fiber Optilc type of Internet Service is costly and fast compared to DSL and this might be the reason of higher customer churning. 
+- More offers should be given to customers who opt for month-to-month contract and company should target customers to subscribe for long-term service. 
+- If a customer's payment method is automatic, he or she is less likely to churn. The reason is in the case of electronic check and mailed check, a customer has to make an effort to pay and it takes time.
