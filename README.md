@@ -133,7 +133,7 @@ I aim to implement a machine learning model to accurately predict if the custome
 **Churn and Tenure Relationship:**
 
 <p align="center">
-<img src="https://github.com/jaysmitjadhav/Churn-Prediction-and-Survival-Analysis/blob/main/static/images/churn_tenure.png" width="600" height="300"/>
+<img src="https://github.com/jaysmitjadhav/Churn-Prediction-and-Survival-Analysis/blob/main/static/images/churn_tenure.png" width="800" height="400"/>
 </p>
 
 - As we can see the higher the tenure, the lesser the churn rate. This tells us that the customer becomes loyal with the tenure.
@@ -142,7 +142,7 @@ I aim to implement a machine learning model to accurately predict if the custome
 **Tenure Distrbution by Various Services:**
 
 <p align="center">
-<img src="https://github.com/jaysmitjadhav/Churn-Prediction-and-Survival-Analysis/blob/main/static/images/tenure_dist.png" width="340" height="250"/>
+<img src="https://github.com/jaysmitjadhav/Churn-Prediction-and-Survival-Analysis/blob/main/static/images/tenure_dist.png" width="800" height="400"/>
 </p>
 
 - When the customers are new they do not opt for various services and their churning rate is very high. This can be seen in above plot for Streaming Movies and this holds true for all various services.
