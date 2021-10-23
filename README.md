@@ -12,3 +12,28 @@ In this project, I aim to perform customer survival analysis and build a model w
 
 ## Customer Churn Prediction App
 <img src=https://github.com/jaysmitjadhav/Churn-Prediction-and-Survival-Analysis/blob/main/static/images/app_pic.png>
+
+## Project Organization
+```
+.
+├── Data/                               : contains project dataset
+│   └── Telco_Customer_Churn.csv
+├── static/                             : plots to show gauge chart, hazard and survival curve, shap values in Flask App 
+│   └── images/
+│       ├── app_pic.png
+│       ├── shap.png
+├── templates/                          : contains html template for flask app
+│   └── index.html
+├── Customer Churn Prediction.ipynb     : Random Forest model to predict customer churn
+├── Customer Survival Analysis.ipynb    : Survival Analysis kaplan-Meier curve, log-rank test and Cox-proportional Hazard model
+├── Exploratory Data Analysis.ipynb     : Data Analysis to explore customer data
+├── LICENSE.md                          : Apache License 2.0
+├── Procfile                            : procfile for app deployment
+└── README.md                           : Report
+├── app.py                              : Flask App
+├── churnmodel.pkl                      : Random Forest model for churn prediction
+├── explainer.bz2                       : Shap Explainer
+├── requirements.txt                    : requirements to run this model
+├── survivemodel.pkl                    : Cox-proportional Hazard model
+
+```
